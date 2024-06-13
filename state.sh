@@ -4,15 +4,20 @@
 currentdatetime=$(date +"%Y-$m-%d %H:%M:%S")
 echo "Current Date and Time: $currentdatetime"
 
-#Current load and users logged in
+#Current load
 currentload=$(uptime)
 echo "Uptime: $currentload"
 
-current usersin=$(who)
+#Current users logged in
+currentusersin=$(who)
 echo "Users logged in: $currentusersin"
 
 #Current processes running(PID, PPID included)
 allrunningprocs=$(ps -ef)
 echo "All running processes: $allrunningprocs"
+
+#Formatting
+echo "======================================"
+echo "                                      "
 }
->>/tmp/state.log
+>>/users/dr916105/assignment1/Assignment-1/tmp/state.log

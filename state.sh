@@ -1,7 +1,7 @@
 #!/bin/bash
 {
 #Current date and time
-currentdatetime=$(date +"%Y-$m-%d %H:%M:%S")
+currentdatetime=$(date +"%Y-%m-%d %H:%M:%S")
 echo "Current Date and Time: $currentdatetime"
 
 #Current load
@@ -20,4 +20,4 @@ echo "All running processes: $allrunningprocs"
 echo "======================================"
 echo "                                      "
 }
->>/users/dr916105/assignment1/Assignment-1/tmp/state.log
+>>/users/dr916105/Assignment-1/tmp/state.log
